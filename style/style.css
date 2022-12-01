@@ -1,0 +1,707 @@
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Krona One', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+body {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.bodyActive {
+    overflow: hidden;
+}
+header {
+    position: relative;
+    height: 51px;
+    width: 1300px;
+    margin: 0 auto;
+}
+.bunnerLine {
+    width: 100%;
+    height: 161px;
+    border-bottom: 1px dashed #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+header .wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+header .logo a {
+    font-family: 'Krona One', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 59px;
+    letter-spacing: -0.09em;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+header .logo {
+    width: 176px;
+    height: 50px;
+    position: relative;
+}
+.menuContentConact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menuContentConact .logo {
+    width: 176px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.menuContentConact .logo a{
+    font-family: 'Krona One', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 42px;
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: -0.09em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menuContentConact .logo span {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 6px;
+    line-height: 7px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1.085em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+.logo span {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 7.75866px;
+    line-height: 9px;
+    letter-spacing: 1.085em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+}
+.burgerOpen {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.menuContentConact > a:nth-of-type(1) {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-decoration: none;
+    width: 50%;
+} 
+.menuContentConact > a:nth-of-type(2) {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: transparent;
+    line-height: 26px;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+.menuContentConact > a:nth-of-type(3) {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+.menuContentConact > a:nth-of-type(4) {
+    width: 157px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.menuIconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84px;
+}
+.menuIconsContainer a{
+    text-decoration: none;
+}
+.menuContentConact > a:nth-of-type(4) svg {
+    margin-left: 10px;
+}
+.burgerOpen label {
+    position: relative;
+}
+.burgerOpen label strong{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -50px;
+    top: 6px;
+    transition: all 0.3s;
+}
+.menu {
+    width: 708px;
+    right: -100%;
+    box-sizing: border-box;
+    position: fixed;
+    background: #000000;
+    transition: 0.7s;
+    z-index: 2;
+    padding: 100px 0 100px 100px;
+}
+.menuContent {
+    width: 400px;
+}
+.menuContent ul {
+    margin-bottom: 64px;
+}
+.menuContent ul li {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.menuContent ul li a{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.open_menu {
+    right: 0;
+    z-index: 2;
+}
+label{
+    display:flex;
+    flex-direction:column;
+    width:20px;
+    cursor:pointer;
+}
+label span{
+    background: #fff;
+    border-radius:10px;
+    height:3px;
+    margin: 3px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+span:nth-of-type(1){
+    width:50%;
+}
+span:nth-of-type(2){
+    width:100%;
+}
+span:nth-of-type(3){
+    width:75%;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    display: none;
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    transform-origin:bottom;
+    transform: rotatez(45deg) translate(6px,6px);
+    width: 32px;
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    width: 32px;
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}
+input[type="checkbox"]:checked ~ strong {
+    opacity: 0;
+    transition: all 0.3s;
+}
+.bunner {
+    background:  url(../img/bunerImg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+    padding-bottom: 100px;
+}
+.bunnerContent {
+    display: flex;
+    width: 1130px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 106px;
+}
+.bunnerContentLeft ul li {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.bunnerContentLeft ul li a {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: 0.5s all;
+    z-index: 100;
+}
+.popup__bg.active { 
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+.popup.active { 
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.bunnerContentRight {
+    width: 555px;
+}
+.bunnerContentRight > p {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.bunnerContentRight h1 span {
+    color: #80C8A9;
+}
+.bunnerContentRight h1 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 94px;
+    letter-spacing: -0.055em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.bunnerContentRightContainer p:nth-of-type(1) {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.bunnerContentRightContainer p:nth-of-type(2) {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.bunnerContentRightContainer p:nth-of-type(2) span {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 600;
+}
+.bunnerContentLeftVideoWrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    animation: animate 5.0s linear infinite;
+}
+.circle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border-radius: 50%;
+    background: #fff;
+}
+.circle__center {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border-radius: 50%;
+}
+.circle__center svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+.circle span svg {
+    width: 100%;
+    height: 100%;
+}
+.circle__center {
+    cursor: pointer;
+}
+.circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@keyframes animate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);  }
+}
+#svgTittle path {
+    stroke-width: 2;
+    fill: transparent;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+#svgTittle path:nth-of-type(1){
+    stroke: #96CCE7 !important;
+    animation: dash1 3s linear infinite;
+}
+#svgTittle path:nth-of-type(2){
+    stroke:  #80C5A7 !important;
+    animation: dash2 3s linear infinite;
+}
+#svgTittle path:nth-of-type(3){
+    stroke: #7DB5D1 !important;
+    animation: dash3 3s linear infinite;
+}
+@keyframes dash1 {
+    to {
+      stroke-dashoffset: 0;
+      fill: #96CCE7;
+    }
+}
+@keyframes dash2 {
+    to {
+      stroke-dashoffset: 0;
+      fill:  #80C5A7;
+    }
+}
+@keyframes dash3 {
+    to {
+      stroke-dashoffset: 0;
+      fill: #7DB5D1;
+    }
+}
+.bunnerContentLeft ul li  {
+    width: max-content;
+}
+.bunnerContentLeft ul li a{
+    display: block;
+   
+    text-decoration:none;
+    padding:5px;
+    font-size:18px;
+    font-family: sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+    transition:0.5s;
+    width: max-content;
+  }
+  
+  .bunnerContentLeft ul li a:hover{
+    transform:scale(1.5);
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  
+  .bunnerContentLeft ul li a:hover{
+    transform:scale(1.5);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#80C5A7;
+  }
+  .bunnerContentLeft ul {
+    position: relative;
+  }
+  .bunnerContentLeft ul li a:before{
+    content:'';
+    background: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    bottom: 10px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+  }
+  
+  ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+  }
+
+
+
+@media (max-width: 1400px) {
+header {
+    width: 90%;
+} 
+.bunnerContent {
+    width: 90%;
+    justify-content: space-around;
+}
+}
+@media (max-width: 991px) {
+.bunnerContentLeft ul {
+    position: inherit;
+}
+.bunnerContentLeft ul li {
+    width: 100%;
+    justify-content: flex-end;
+}
+.bunnerContentLeft ul li a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.bunnerContentLeft ul li a:before{
+    content:'';
+    background: url(../img/arrowPlan.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: inherit;
+    transform: none;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    margin-right: 8px;
+}
+.bunnerContentLeft ul li a:hover {
+    transform: scale(1);
+    filter: none;
+}
+.bunnerContentLeft ul li a:hover:before {
+    content: none;
+}
+.bunnerContentLeftVideoWrapper {
+    margin-left: auto;
+}
+.bunnerContentLeft {
+    margin-right: 64px;
+}
+.bunnerContent {
+    margin-top: 64px;
+}
+.bunnerContentRight h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+}
+.bunnerContentRight h1 svg {
+    width: 35px;
+    height: 32px;
+}
+.bunnerContent {
+    justify-content: center;
+}
+.bunnerContentRight {
+    width: 300px;
+}
+.bunner {
+    background-size: auto;
+    padding-bottom: 64px;
+}
+.bunnerLine {
+    height: 100px;
+}
+header .logo a {
+    font-weight: 400;
+    font-size: 33.4084px;
+    line-height: 42px;
+}
+header .logo a svg {
+    width: 29px;
+    height: 27px;
+}
+.logo span {
+    font-size: 5.51388px;
+    line-height: 6px;
+    bottom: 5px;
+    right: 40px;
+}
+
+}
+@media (max-width: 768px) {
+.bunnerContent {
+    flex-direction: column-reverse;
+}
+.bunnerContentLeft {
+    width: 100%;
+    right: 0;
+}
+.bunnerContentRight {
+    width: 100%;
+}
+.bunnerContent {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+.bunnerContentRight h1 {
+    margin-bottom: 64px;
+}
+.bunnerContentRightContainer {
+    margin-bottom: 80px;
+}
+.bunnerContentLeft {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 0;
+}
+.bunner {
+    background-size: cover;
+}
+.bunnerContentLeftVideoWrapper {
+    position: absolute;
+}
+.menu {
+    width: 100vw;
+}
+.menuContent {
+    width: 100%;
+}
+}
+@media (max-width: 576px) {
+.menu {
+    padding: 80px 16px;
+}
+.menuContent ul {
+    width: 100%;
+    
+}
+.menuContent ul li {
+    justify-content: flex-end;
+}
+.menuContent ul li a {
+    text-align: right;
+}
+.menuContentConact {
+    align-items: center;
+}
+}
+@media (max-width: 320px) {
+.bunnerContentLeft ul li a {
+    font-size: 12px;
+}
+.bunnerContentRight h1 {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.bunnerContentRight > p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.bunnerContentRightContainer p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 20px; 
+}
+}
