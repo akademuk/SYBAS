@@ -249,13 +249,13 @@ label span{
     margin: 3px 0;
     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
-span:nth-of-type(1){
+.burgerOpen label span:nth-of-type(1){
     width:50%;
 }
-span:nth-of-type(2){
+.burgerOpen label span:nth-of-type(2){
     width:100%;
 }
-span:nth-of-type(3){
+.burgerOpen label span:nth-of-type(3){
     width:75%;
 }
 input[type="checkbox"]{
@@ -549,6 +549,7 @@ ul li a:hover:before{
     padding: 128px 0;
     width: 100%;
     overflow: hidden;
+    border-bottom: 1px dashed #000000;
 }
 .whatWeDoLeft h2 {
     font-family: 'Krona One', sans-serif;
@@ -690,14 +691,100 @@ ul li a:hover:before{
     -o-transform: translateX(0%);
     transform: translateX(0%);
 }
-
-
-
-
-
-
-
-
+.solutions {
+    background:url(../img/NoiseFX.png), url(../img/solutionsBackground.png);
+    background-repeat:repeat,no-repeat;
+    background-size:auto,cover;
+    background-position: center;
+    padding: 128px 0;
+}
+.solutionsWrapper {
+    max-width: 1300px;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+.solutionsLeft {
+    width: 48%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.solutionsRight {
+    width: 48%;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.solutionsRightContainer {
+    width: 43%;
+    height: 305px;
+    padding: 20px 16px;
+    margin-bottom: 24px;
+    border: 1px dashed #FFFFFF;
+}
+.solutionsRightContainerAfter h3 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    display: flex;
+    flex-direction: column;
+}
+.solutionsRightContainerAfter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.solutionsRightContainerAfter h3 span {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.solutionsRightContainerAfter svg {
+    margin-left: auto;
+}
+.solutionsLeft h2{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    color: transparent;
+}
+.solutionsLeft h3 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    width: max-content;
+}
+.solutionsLeft h2 span {
+    text-align: left;
+    margin-left: -100px;
+}
+.solutionsLeft h3 {
+    position: absolute;
+    right: 0;
+    top: 125px;
+}
 
 
 
@@ -896,7 +983,9 @@ header .logo a svg {
     bottom: 5px;
     right: 40px;
 }
-
+.burgerOpen:hover {
+    background: transparent;
+}
 }
 @media (max-width: 768px) {
 .bunnerContent {
