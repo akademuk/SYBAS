@@ -697,6 +697,7 @@ ul li a:hover:before{
     background-size:auto,cover;
     background-position: center;
     padding: 128px 0;
+    border-bottom: 1px dashed #000000;
 }
 .solutionsWrapper {
     max-width: 1300px;
@@ -796,31 +797,60 @@ ul li a:hover:before{
 .solutionsRightContainerBefore {
     width: 100%;
     height: 100%;
-    background: yellowgreen;
+    background: rgba(255, 255, 255, 0.5);
     border: 1px dashed #FFFFFF;
     position: absolute;
     width: 100%;
+    padding: 20px 16px;
     height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     left: 0;
     top: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     transition: 1s;
     backface-visibility: hidden;
 }
+.solutionsRightContainerBefore p{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #393939;
+    margin-bottom: 16px;
+}
+.solutionsRightContainerBefore .cardImg {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.solutionsRightContainerBefore .cardImg img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .solutionsRightContainer {
     position: relative;
     perspective: 1000px;
-  }
-
-  .solutionsRightContainerBefore {
+}
+.solutionsRightContainerBefore {
     transform: rotateY(180deg);
-  }
-  .solutionsRightContainer:hover .solutionsRightContainerAfter {
-    transform: rotateY(180deg);}
-  .solutionsRightContainer:hover .solutionsRightContainerBefore {
-    transform: rotateY(360deg);}
-
+}
+.solutionsRightContainer:hover .solutionsRightContainerAfter {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.solutionsRightContainer:hover .solutionsRightContainerBefore {
+    transform: rotateY(360deg);
+    cursor: pointer;
+}
+.solutionsRightNone {
+    display: none;
+}
 
 
 
@@ -842,6 +872,17 @@ header {
 .bunnerContent {
     width: 90%;
     justify-content: space-around;
+}
+.solutionsWrapper {
+    max-width: 90%;
+}
+.solutionsRightContainerAfter h3 {
+    font-size: 30px;
+    line-height: 35px;
+}
+.solutionsRightContainerAfter h3 span{
+    font-size: 30px;
+    line-height: 35px;
 }
 }
 @media (max-width: 1200px) {
@@ -919,6 +960,105 @@ header {
     height: 13px;
     display: flex;
     margin-left: 7px;
+}
+.solutionsLeft h2 {
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.solutionsLeft h2 span{
+    display: inline;  
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+.solutionsLeft {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+.solutionsRight {
+    width: 50%;
+    margin-left: 5px;
+}
+.solutionsLeft h3 {
+    position: inherit;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    top: 0;
+}
+.solutionsRight {
+    flex-direction: column;
+}
+.solutionsRightContainer {
+    width: 100%;
+    height: 100%;
+}
+.solutionsLeft h3 br {
+    display: none;
+}
+.solutionsRightContainer:hover .solutionsRightContainerAfter {
+    transform: none;
+}
+.solutionsRightContainer:hover .solutionsRightContainerBefore {
+    transform: none;
+}
+.solutionsRightContainerBefore {
+    display: none;
+}
+.solutionsRightContainerAfter h3 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+}
+.solutionsRightContainerAfter h3 span{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 0;
+}
+.solutionsRightNone {
+    display: block;
+}
+.solutionsRightNone p {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+    margin-top: 16px;
+}
+.solutionsRightContainerAfter {
+    padding: 16px 8px;
+}
+.solutionsRightNoneSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solutionsRightNoneSection a:nth-of-type(2) {
+    margin: 0 20px;
+}
+.solutionsRightContainerAfter > svg {
+    display: none;
+}
+.solutionsRightContainerAfter {
+    position: inherit;
+}
+.solutions {
+    padding: 64px;
+}
+.solutionsWrapper {
+    max-width: 100%;
 }
 }
 @media (max-width: 991px) {
@@ -1071,6 +1211,9 @@ header .logo a svg {
 .menuContent {
     width: 100%;
 }
+.solutions {
+    padding: 64px 16px;
+}
 }
 @media (max-width: 576px) {
 .menu {
@@ -1103,6 +1246,18 @@ header .logo a svg {
 }
 .whatWeDoRightSection > a {
     margin-top: 16px;
+}
+}
+@media(max-width:350px) {
+.solutionsLeft {
+    flex-direction: column-reverse;
+    width: max-content;
+}
+.solutionsRight {
+    width: auto;
+}
+.solutionsLeft h2 {
+    margin-top: 15px;
 }
 }
 @media (max-width: 320px) {
