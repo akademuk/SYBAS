@@ -721,11 +721,9 @@ ul li a:hover:before{
     flex-wrap: wrap;
 }
 .solutionsRightContainer {
-    width: 43%;
+    width: 48%;
     height: 305px;
-    padding: 20px 16px;
     margin-bottom: 24px;
-    border: 1px dashed #FFFFFF;
 }
 .solutionsRightContainerAfter h3 {
     font-family: 'Krona One', sans-serif;
@@ -742,6 +740,16 @@ ul li a:hover:before{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px dashed #FFFFFF;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    backface-visibility: hidden;
 }
 .solutionsRightContainerAfter h3 span {
     font-family: 'Ubuntu', sans-serif; 
@@ -785,8 +793,33 @@ ul li a:hover:before{
     right: 0;
     top: 125px;
 }
+.solutionsRightContainerBefore {
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    border: 1px dashed #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.solutionsRightContainer {
+    position: relative;
+    perspective: 1000px;
+  }
 
-
+  .solutionsRightContainerBefore {
+    transform: rotateY(180deg);
+  }
+  .solutionsRightContainer:hover .solutionsRightContainerAfter {
+    transform: rotateY(180deg);}
+  .solutionsRightContainer:hover .solutionsRightContainerBefore {
+    transform: rotateY(360deg);}
 
 
 
