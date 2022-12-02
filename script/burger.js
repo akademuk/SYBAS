@@ -11,3 +11,9 @@ $('.burgerOpen').on('click', function (e) {
     else
     $('.body').removeClass("bodyActive");
 });
+$('.linkMenu').on('click', function (e) {
+    document.getElementById('check').checked = false;
+    $('.menu').removeClass("open_menu"); 
+    $('.body').removeClass("bodyActive"); 
+});
+
