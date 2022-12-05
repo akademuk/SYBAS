@@ -351,8 +351,12 @@ input[type="checkbox"]:checked ~ strong {
     right: 10px;
     cursor: pointer;
 }
+.bunnerContentLeft {
+    width: 50%;
+    margin-right: 24px;
+}
 .bunnerContentRight {
-    width: 555px;
+    width: 50%;
 }
 .bunnerContentRight > p {
     font-family: 'Ubuntu', sans-serif; 
@@ -707,7 +711,7 @@ ul li a:hover:before{
 }
 .solutionsWrapper {
     max-width: 1300px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -870,7 +874,7 @@ ul li a:hover:before{
 }
 .technologiesWrapper {
     max-width: 1300px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -1009,7 +1013,7 @@ ul li a:hover:before{
 }
 .aboutUsWrapper {
     max-width: 1300px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -1074,7 +1078,7 @@ ul li a:hover:before{
 .benefitsWrapper {
     max-width: 1300px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -1337,7 +1341,7 @@ ul li a:hover:before{
 }
 .weWork .weWorkWrapper {
     max-width: 1300px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -1452,6 +1456,602 @@ ul li a:hover:before{
     border: 1.38342px dashed #393939;
     margin-right: 16px;
 }
+.cases {
+    background: url(../img/casesBackground.png), #000;
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 128px 0;
+    width: 100%;
+    border-bottom: 1px dashed #000000;  
+    position: relative; 
+}
+.cases:before {
+    content: "";
+    background: url(../img/casesNoiseFX.png);
+    background-size: auto;
+    background-repeat: repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 2;
+}
+.box {
+    overflow: hidden;
+    height: 115px;
+    width: 100%;
+}
+.casesWrapper {
+    max-width: 1300px;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+.casesRight {
+    width: 50%;
+}
+.casesLeft {
+    width: 50%;
+    margin-right: 24px;
+}
+.casesTabsContainer {
+    display: flex;
+    flex-direction: column;
+}
+.casesTabsSectionTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 72px 16px 0px;
+    height: 88px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed #FFFFFF;
+}
+.casesTabsSectionTop h3 {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.casesTabsSectionMain {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    height: 240px;
+    box-sizing: border-box;
+}
+.casesTabsSectionMainContent p{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+   
+}
+.casesTabsSectionMainContent a {
+    padding: 6px 20px;
+    width: 132px;
+    height: 29px;
+    background: #509979;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    margin-left: auto;
+}
+.casesTabsSectionMainContent a::after {
+    content: "";
+    background: url(../img/arrowTabsContainer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 7px;
+    height: 12px;
+    margin-left: 12px;
+    display: flex;
+}
+.casesTabsSection {
+    margin-bottom: 16px;
+}
+.casesTabsSectionMain img {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+.casesTabsSectionMainContent {
+    margin-right: 24px;
+    width: 60%;
+}
+.casesLeft h2{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px#E6E6E6;
+    color: transparent;
+    margin-bottom: 64px;
+}
+.casesTabs ul li a{
+    padding: 14px 32px;
+    height: 52px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    transition: all 0.3s;
+    width: max-content;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.casesTabs ul li a:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.casesTabs ul li a::after {
+    content: "";
+    background: url(../img/tabsArrow.svg);
+    width: 17px;
+    height: 17px;
+    margin-left: 14px;
+}
+.loadMore {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+}
+.loadMore::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    background: url(../img/loadmore.svg);
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+.cases:after {
+    content: "";
+    background: url(../img/Logoblack.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: 1;
+}
+.news {
+    background: url(../img/whatWeDoBac.png), #fff;
+    background-size: contain;
+    background-repeat: repeat;
+    display: flex;
+    padding: 128px 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px dashed #000000;   
+}
+.newsWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.newsTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.newsTop h2 {
+    font-family: 'Krona One', sans-serif;
+    -webkit-text-stroke: 1px#393939;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: transparent;
+    width: 50%;
+}
+.newsTop h2 span {
+    color: #393939;
+}
+.newsArrow {
+    display: flex;
+    align-items: center;
+}
+.newsPrev,
+.newsNext {
+    width: 75px;
+    height: 75px;
+    border: 1px dashed #393939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviewsPrev,
+.reviewsNext {
+    width: 75px;
+    height: 75px;
+    border: 1px dashed #393939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviewsNext {
+    margin-left: 24px;
+}
+.newsNext {
+    margin-left: 24px;
+}
+.newsContentItemFront {
+    padding: 20px 16px;
+    border: 1px dashed #000000;
+}
+.newsContentItemFront img {
+    max-width: 100%;
+    margin-bottom: 32px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+.newsContentItemFront h3 {
+    font-family: 'Krona One', sans-serif;
+    -webkit-text-stroke: 1px#393939;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 32px;
+    color: transparent;
+    min-height: 120px;
+}
+.newsContent .slick-list .slick-track .slick-slide {
+    margin: 0 12px;
+}
+.ReviewsContent .slick-list .slick-track .slick-slide {
+    margin: 0 12px;
+}
+.newsContentItemFront .box {
+    height: 144px;
+    margin-bottom: 32px;
+}
+.newsContentItemFront svg {
+    display: flex;
+    margin-left: auto;
+}
+#newsDots .slick-dots {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#newsDots .slick-dots li {
+    background: transparent;
+    margin-right: 16px;
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+#newsDots .slick-dots li button {
+    font-size: 0;
+    background: transparent;
+    border: none;
+    background: url(../img/newsDots.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    display: flex;
+}
+#newsDots .slick-dots .slick-active {
+    background: #ABDDC7;
+} 
+.newsPrev, 
+.newsNext {
+    transition: all 0.3s;
+}
+.newsPrev svg, 
+.newsNext svg{
+    transition: all 0.3s;
+}
+.newsPrev:hover, 
+.newsNext:hover {
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+#reviewsDots .slick-dots {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reviewsDots .slick-dots li {
+    background: transparent;
+    margin-right: 16px;
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+#reviewsDots .slick-dots li button {
+    font-size: 0;
+    background: transparent;
+    border: none;
+    background: url(../img/newsDots.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    display: flex;
+}
+#reviewsDots .slick-dots .slick-active {
+    background: #ABDDC7;
+} 
+.newsPrev:hover svg path, 
+.newsNext:hover svg path{
+    transition: all 0.3s;
+    fill: #fff;
+    cursor: pointer;
+}
+.newsPrev:active, 
+.newsNext:active {
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+}
+.newsContentItemFront > svg {
+    transition: all 1s;
+}
+.newsContentItemFront:hover > svg {
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+.newsContentItem {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.reviewsPrev, 
+.reviewsNext {
+    transition: all 0.3s;
+}
+.reviewsPrev svg, 
+.reviewsNext svg{
+    transition: all 0.3s;
+}
+.reviewsPrev:hover, 
+.reviewsNext:hover {
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+.reviewsPrev:hover svg path, 
+.reviewsNext:hover svg path{
+    transition: all 0.3s;
+    fill: #fff;
+    cursor: pointer;
+}
+.reviewsPrev:active, 
+.reviewsNext:active {
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+}
+.newsContentItemBack {
+    border: 1px dashed #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 16px;
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.5s;
+}
+.reviewsBack {
+    border: 1px dashed #000000;
+    padding: 20px 16px;
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.newsContentItemFront {
+    transition: 1s; 
+    position: relative;
+    z-index: 5;
+}
+.is-flipped .newsContentItemFront {
+    opacity: 0;
+    transition: 0.5s;
+}
+.newsContentItem.is-flipped {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.newsContentItemBack {
+    transition: 1s;
+    z-index: 1;
+}
+.newsContentItem.is-flipped .newsContentItemBack {
+    transform: rotateY(180deg);
+    opacity: 1;
+    transition: 1s;
+}
+.newsContentItemBackTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.newsContentItemBackTop p {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #393939;
+    margin-right: 16px;
+}
+.newsContentItemBackMain p{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #393939;
+    margin-bottom: 20px;
+}
+.newsContentItemBackBottom p {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: #393939;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+.newsContentItemBackBottom p::before {
+    content: "";
+    background: url(../img/Vectors.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 9px;
+    margin-right: 8px;
+    display: flex;
+}
+.newsContentItemBackFooter {
+    display: flex;
+    justify-content: center;
+}
+.newsContentItemBackFooter a{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.newsContentItemBackFooter a::before {
+    content: "";
+    background: url(../img/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    display: flex;
+}
+.news {
+    position: relative;
+}
+.news:after {
+    content: "";
+    background: url(../img/newsBac.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -35%;
+    top: -35%;
+    z-index: 0;
+}
+.reviewsTop {
+    display: flex;
+    align-items: flex-end;
+}
+.reviewsTopLeft {
+    display: flex;
+    flex-direction: column;
+}
+.reviews::after {
+    content: none;
+}
+.reviews .newsWrapper .newsTop {
+    justify-content: flex-start;
+}
+.reviews .newsWrapper .newsTop h2{
+    margin-right: 24px;
+}
+.reviews .newsWrapper .newsTop .newsArrow {
+    margin-left: auto;
+}
+.reviewsTopRight {
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 140% !important;
+    color: #393939 !important;
+    margin-left: 25px !important;
+}
+.reviewsTopStars{
+    margin-bottom: 0 !important;
+    align-items: center;
+}
+.reviewsTopLeft > img {
+    max-width: 45%;
+}
+.ReviewsnewsContentItem {
+cursor: pointer;
+}
+.newsContentItemBackMain {
+    max-height: 100px;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    overflow: hidden;
+}
+.active {
+    max-height: 500px;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
 
 
 
@@ -1528,6 +2128,13 @@ header {
 }
 .solutionsLeft h2 {
     font-size: 75px;
+}
+.casesWrapper {
+    max-width: 90%; 
+}
+.newsWrapper {
+    max-width: 90%;
+    width: 100%;
 }
 }
 @media (max-width: 1200px) {
@@ -1925,7 +2532,164 @@ header {
     background-position: center;
     padding: 64px 0;
 }
+.casesWrapper {
+    max-width: 100%;
+    padding: 0 64px;
 }
+.casesLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.casesLeft h2 {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.casesTabsSectionTop {
+    flex-direction: column;
+    border-bottom: none;
+    padding: 0;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+.casesTabsSectionTop h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+    margin-bottom: 8px;
+}
+.casesTabsSectionMain {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 0;
+    width: 315px;
+}
+.casesTabsSectionMain img {
+    width: 100%;
+    height: 163px;
+    margin-bottom: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+.casesTabsSectionMainContent {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.casesTabsSectionMainContent p {
+    font-weight: 300;
+    height: 100px;
+    font-size: 14px;
+    line-height: 140%;
+}
+.casesTabsSectionMainContent a {
+    margin-left: 0;
+    margin-right: auto;
+}
+.casesTabsSection {
+    padding-bottom: 32px;
+    margin-bottom: 16px;
+    border-bottom: 0.5px dashed #E6E6E6;
+}
+.casesTabs ul li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+}
+.casesTabsContainer {
+    width: 315px;
+}
+.newsTop {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    margin-right: 64px;
+    padding-right: 64px;
+}
+.newsTop h2 {
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.newsTop h2 span {
+    margin-left: 5px;
+}
+.newsPrev, .newsNext {
+    width: 32px;
+    height: 32px;
+}
+.newsPrev svg, .newsNext svg {
+    width: 6px;
+    height: 11px;
+}
+.newsNext {
+    margin-left: 16px;
+}
+.newsWrapper {
+    max-width: 100%;
+    padding-left: 64px;
+}
+.newsContentItemFront h3 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    min-height: auto;
+}
+.newsContentItemFront .box {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    height: 85px;
+}
+
+.newsContentItemBackMain p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+}
+.reviewsTopLeft > img {
+    max-width: 65%;
+}
+.reviewsTopLeft {
+    align-items: flex-end;
+}
+.reviews .newsWrapper .newsTop h2{
+    margin-right: 0 !important;
+}
+.reviewsPrev, .reviewsNext {
+    width: 32px;
+    height: 32px;
+}
+.reviewsPrev svg, .reviewsNext svg {
+    width: 6px;
+    height: 11px;
+}
+.newsTop .newsArrow {
+    margin-top: 24px;
+}
+.reviewsNext {
+    margin-left: 16px;
+}
+.reviewsTopRight {
+    margin-right: 0 !important;
+}
+.reviewsTopStars {
+    margin-top: 8px;
+}
+.news {
+    padding: 64px 0;
+}
+.reviews {
+    padding: 64px 0; 
+}
+}
+
 @media (max-width: 991px) {
 .bunnerContentLeft ul {
     position: inherit;
@@ -2148,10 +2912,45 @@ header .logo a svg {
     width: 100px;
     height: 50px;
 }
+.casesWrapper {
+    padding: 0 16px;
+}
+.casesTabsSectionMain {
+    width: 100%;
+}
+.casesTabsContainer {
+    width: 100% !important;
+}
+.cases:after{
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    height: 50%;
+}
+.newsWrapper {
+    padding-left: 16px;
+}
+.newsTop {
+    padding-right: 16px;
+    margin-right: 16px;
+}
 }
 @media (max-width: 576px) {
 .menu {
     padding: 80px 16px;
+}
+.ReviewsnewsContentItem {
+    width: 250px; 
+}
+.newsContentItem {
+    width: 250px;
+}
+.casesTabsSectionTop img {
+    max-width: 100%;
+}
+.casesTabsSectionMainContent a {
+    width: 100%;
+    box-sizing: border-box;
 }
 .menuContent ul {
     width: 100%;
@@ -2186,14 +2985,27 @@ header .logo a svg {
 .whatWeDoRightSection > a {
     margin-top: 16px;
 }
+.newsTop h2 {
+    flex-direction: column;
+}
 }
 @media(max-width:350px) {
 .solutionsLeft {
     flex-direction: column-reverse;
-    width: max-content;
+    width: auto;
+    overflow: hidden;
 }
 .solutionsRight {
     width: auto;
+}
+.solutionsRight {
+    width: 100%;
+}
+.technologiesLeft {
+    width: auto;
+}
+.technologiesOpacity {
+    width: 100% !important;
 }
 .solutionsLeft h2 {
     margin-top: 15px;
@@ -2250,5 +3062,8 @@ header .logo a svg {
 }
 .technologiesLeftContainer a svg {
     display: none;
+}
+.casesTabs ul li a {
+    padding-right: 0;
 }
 }
