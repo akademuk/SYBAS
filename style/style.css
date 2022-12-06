@@ -26,7 +26,7 @@ header {
 .bunnerLine {
     width: 100%;
     height: 161px;
-    border-bottom: 1px dashed #FFFFFF;
+    border-bottom: 2px dashed #FFFFFF;
     display: flex;
     align-items: center;
 }
@@ -57,6 +57,9 @@ header .logo {
     width: 176px;
     height: 50px;
     position: relative;
+}
+header .logo svg {
+    margin-left: 5px;
 }
 .menuContentConact {
     display: flex;
@@ -95,7 +98,7 @@ header .logo {
     bottom: 0px;
     right: 30px;
 }
-.logo span {
+header .wrapper .logo span {
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 300;
     font-size: 7.75866px;
@@ -105,7 +108,7 @@ header .logo {
     color: #FFFFFF;
     position: absolute;
     bottom: -10px;
-    right: 20px;
+    right: -12px;
 }
 .burgerOpen {
     position: absolute;
@@ -160,7 +163,7 @@ header .logo {
     width: 157px;
     height: 36px;
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.12);
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 500;
     font-size: 14px;
@@ -289,7 +292,7 @@ input[type="checkbox"]:checked ~ strong {
     width: 100vw;
     position: relative;
     padding-bottom: 100px;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 2px dashed #000000;
 }
 .bunnerContent {
     display: flex;
@@ -512,13 +515,9 @@ input[type="checkbox"]:checked ~ strong {
     width: max-content;
 }
   
+
 .bunnerContentLeft ul li a:hover{
-    transform:scale(1.5);
-    opacity:0.2;
-    filter:blur(5px);
-}
-.bunnerContentLeft ul li a:hover{
-    transform:scale(1.5);
+    transform:scale(1.3);
     opacity:1;
     filter:blur(0);
     text-decoration:none;
@@ -556,7 +555,7 @@ ul li a:hover:before{
     padding: 128px 0;
     width: 100%;
     overflow: hidden;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 2px dashed #000000;
 }
 .whatWeDoLeft h2 {
     font-family: 'Krona One', sans-serif;
@@ -642,7 +641,7 @@ ul li a:hover:before{
     color: #393939;
     padding-bottom: 14px;
     margin-bottom: 6px;
-    border-bottom: 1px solid #ACACAC;
+    border-bottom: 2px solid #ACACAC;
     position: relative;
 }
 .whatWeDoRightSectionTop h3::after{
@@ -707,7 +706,7 @@ ul li a:hover:before{
     background-size:auto,cover;
     background-position: center;
     padding: 128px 0;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 2px dashed #000000;
 }
 .solutionsWrapper {
     max-width: 1300px;
@@ -751,7 +750,7 @@ ul li a:hover:before{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px dashed #FFFFFF;
+    border: 2px dashed #FFFFFF;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -808,7 +807,7 @@ ul li a:hover:before{
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
-    border: 1px dashed #FFFFFF;
+    border: 2px dashed #FFFFFF;
     position: absolute;
     width: 100%;
     padding: 20px 16px;
@@ -870,7 +869,7 @@ ul li a:hover:before{
     padding: 128px 0;
     width: 100%;
     overflow: hidden;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 2px dashed #000000;
 }
 .technologiesWrapper {
     max-width: 1300px;
@@ -1009,7 +1008,7 @@ ul li a:hover:before{
     background-size:auto,cover;
     background-position: center;
     padding: 128px 0;
-    border-bottom: 1px dashed #000000; 
+    border-bottom: 2px dashed #000000; 
 }
 .aboutUsWrapper {
     max-width: 1300px;
@@ -1073,7 +1072,7 @@ ul li a:hover:before{
     padding: 128px 0;
     width: 100%;
     overflow: hidden;
-    border-bottom: 1px dashed #000000; 
+    border-bottom: 2px dashed #000000; 
 }
 .benefitsWrapper {
     max-width: 1300px;
@@ -1093,10 +1092,10 @@ ul li a:hover:before{
     color: #393939;
 }
 .benefitsContainer .solutionsRightContainer .solutionsRightContainerAfter{
-    border: 1px dashed #393939 !important;
+    border: 2px dashed #393939 !important;
 }
 .benefitsContainer .solutionsRightContainer .solutionsRightContainerBefore{
-    border: 1px dashed #393939 !important;
+    border: 2px dashed #393939 !important;
 }
 .benefitsContainerText h3 {
     -webkit-text-stroke: 1px#393939;
@@ -1153,16 +1152,17 @@ ul li a:hover:before{
     background-size: auto,cover;
     background-position: center;
     padding: 128px 0;
-    border-bottom: 1px dashed #000000;
+    border-bottom: 2px dashed #000000;
 }
 .projectWrapper {
-    max-width: 1200px;
+    max-width: 1245px;
     display: flex;
+    margin: 0 auto;
     align-items: flex-start;
     justify-content: center;
 }
 .projectLeft {
-    width: 50%;
+    width: 49%;
     margin-right: 24px;
 }
 .projectLeft h2 {
@@ -1175,6 +1175,15 @@ ul li a:hover:before{
     -webkit-text-stroke: 1px#fff;
     color: transparent;
 }
+.cardImg.benefitsImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardImg.benefitsImg a svg{
+    width: 100px;
+    height: 100px;
+}
 .projectLeft h3 {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
@@ -1185,10 +1194,10 @@ ul li a:hover:before{
     color: #fff;
 }
 .projectRight {
-    width: 470px;
+    width: 50%
 }
 .projectRight form {
-    width: 100%;
+    width: 470px;
     display: flex;
     flex-direction: column;
 }
@@ -1201,7 +1210,7 @@ ul li a:hover:before{
     padding: 6px 16px 5px 44px;
     height: 52px;
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.12);
     margin-bottom: 16px;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
@@ -1215,8 +1224,8 @@ ul li a:hover:before{
     padding: 6px 16px 5px;
     height: 288px;
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    margin: 32px 0; 
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    margin: 16px 0 32px 0; 
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
@@ -1328,16 +1337,17 @@ ul li a:hover:before{
     top: 14px;
 }
 .projectRight form label input:hover {
-    border: 1px solid rgba(255, 255, 255, 0.32);
+    border: 2px solid rgba(255, 255, 255, 0.32);
     background: transparent;
 }
+
 .weWork {
     background: url(../img/weWork.png), url(../img/whatWeDoBac.png) #fff;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 128px 0;
     width: 100%;
-    border-bottom: 1px dashed #000000;  
+    border-bottom: 2px dashed #000000;  
 }
 .weWork .weWorkWrapper {
     max-width: 1300px;
@@ -1405,7 +1415,7 @@ ul li a:hover:before{
     min-width: 32px;
     min-height: 32px;
     border-radius: 50%;
-    border: 1.38342px dashed #393939;
+    border: 2px dashed #393939;
     margin-right: 16px;
 }
 .weWorkRight ul li:nth-of-type(2):before {
@@ -1462,7 +1472,7 @@ ul li a:hover:before{
     background-repeat: repeat;
     padding: 128px 0;
     width: 100%;
-    border-bottom: 1px dashed #000000;  
+    border-bottom: 2px dashed #000000;  
     position: relative; 
 }
 .cases:before {
@@ -1510,7 +1520,7 @@ ul li a:hover:before{
     padding: 16px 72px 16px 0px;
     height: 88px;
     box-sizing: border-box;
-    border-bottom: 1px dashed #FFFFFF;
+    border-bottom: 2px dashed #FFFFFF;
 }
 .casesTabsSectionTop h3 {
     font-family: 'Ubuntu', sans-serif; 
@@ -1664,7 +1674,7 @@ ul li a:hover:before{
     padding: 128px 0;
     width: 100%;
     overflow: hidden;
-    border-bottom: 1px dashed #000000;   
+    border-bottom: 2px dashed #000000;   
 }
 .newsWrapper {
     max-width: 1200px;
@@ -1704,7 +1714,7 @@ ul li a:hover:before{
 .newsNext {
     width: 75px;
     height: 75px;
-    border: 1px dashed #393939;
+    border: 2px dashed #393939;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1713,7 +1723,7 @@ ul li a:hover:before{
 .reviewsNext {
     width: 75px;
     height: 75px;
-    border: 1px dashed #393939;
+    border: 2px dashed #393939;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1726,7 +1736,7 @@ ul li a:hover:before{
 }
 .newsContentItemFront {
     padding: 20px 16px;
-    border: 1px dashed #000000;
+    border: 2px dashed #000000;
 }
 .newsContentItemFront img {
     max-width: 100%;
@@ -1881,7 +1891,7 @@ ul li a:hover:before{
     cursor: pointer;
 }
 .newsContentItemBack {
-    border: 1px dashed #000000;
+    border: 2px dashed #000000;
     position: absolute;
     top: 0;
     left: 0;
@@ -1893,7 +1903,7 @@ ul li a:hover:before{
     transition: 0.5s;
 }
 .reviewsBack {
-    border: 1px dashed #000000;
+    border: 2px dashed #000000;
     padding: 20px 16px;
     width: 100%;
     height: max-content;
@@ -1995,12 +2005,12 @@ ul li a:hover:before{
     content: "";
     background: url(../img/newsBac.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     display: flex;
-    width: 100%;
+    width: 42%;
     height: 100%;
     position: absolute;
-    right: -35%;
+    right: 0;
     top: -35%;
     z-index: 0;
 }
@@ -2166,6 +2176,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 16px;
 }
 .footerContainer a:nth-of-type(1) {
     font-family: 'Ubuntu', sans-serif; 
@@ -2178,7 +2189,7 @@ footer {
 .footerContainer a:nth-of-type(2) {
     padding: 8px 24px;
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.12);
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 500;
     font-size: 14px;
@@ -2193,7 +2204,7 @@ footer {
     margin-left: 8px;
 }
 .footer {
-    border-top: 1px dashed #FFFFFF;
+    border-top: 2px dashed #FFFFFF;
     padding: 17px 76px;
     background: #000000;
 }
@@ -2223,6 +2234,11 @@ header {
 .bunnerContent {
     width: 90%;
     justify-content: space-around;
+}
+.bunnerContentLeft {
+    width: 43%;
+    margin-right: 24px;
+    padding-left: 100px;
 }
 .solutionsWrapper {
     max-width: 90%;
@@ -2290,9 +2306,6 @@ header {
 .benefits {
     padding-bottom: 400px;
 }
-.solutionsLeft h3 br:nth-last-of-type(1) {
-    display: block;
-}
 .benefitsLeft {
     align-items: flex-start;
 }
@@ -2351,7 +2364,7 @@ header {
     padding: 0 64px;
 }
 .whatWeDoRightSectionTop {
-    width: 50%;
+    width: 53%;
 }
 .whatWeDoRightSectionTop > a {
     opacity: 1;
@@ -2363,7 +2376,7 @@ header {
     font-family: 'Ubuntu', sans-serif; 
     padding: 6px 20px;
     background: rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
     width: max-content;
@@ -2402,6 +2415,10 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     width: 50%;
+    margin-right: 24px;
+}
+.solutionsLeft h3 br {
+    display: none;
 }
 .solutionsRight {
     width: 50%;
@@ -2893,9 +2910,6 @@ header {
     font-size: 14px;
     line-height: 140%;
 }
-}
-
-@media (max-width: 991px) {
 .bunnerContentLeft ul {
     position: inherit;
 }
@@ -2903,27 +2917,19 @@ header {
     width: 100%;
     justify-content: flex-end;
 }
-.technologiesSvgSection svg {
-    max-width: 75%;
-}
 .bunnerContentLeft ul li a {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 140%;
-    text-align: right;
-    position: relative;
     display: flex;
     align-items: center;
 }
-.whatWeDoRightSectionTop h3 {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 130%;
+.bunnerContentLeft {
+    margin-right: 24px !important;
+    padding-left: 0;
+    width: 50%;
 }
-.whatWeDoRightSectionTop p {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 140%;
+.bunnerContent {
+    width: 100%;
+    padding: 0 64px;
+    box-sizing: border-box;
 }
 .bunnerContentLeft ul li a:before{
     content:'';
@@ -2969,7 +2975,7 @@ header {
     justify-content: center;
 }
 .bunnerContentRight {
-    width: 300px;
+    width: 50%;
 }
 .bunner {
     background-size: auto;
@@ -2977,6 +2983,18 @@ header {
 }
 .bunnerLine {
     height: 100px;
+}
+.bunnerContentLeft ul {
+    margin-bottom: 32px;
+}
+.hidden strong {
+    display: block;
+}
+.bunnerContentLeft ul li {
+    height: 56px;
+}
+.bunnerContentLeft ul li a {
+    font-size: 17px;
 }
 header .logo a {
     font-weight: 400;
@@ -2996,6 +3014,42 @@ header .logo a svg {
 .burgerOpen:hover {
     background: transparent;
 }
+.projectRight form {
+    width: 100%;
+}
+header .wrapper .logo span {
+    font-weight: 300;
+    font-size: 5.51388px;
+    line-height: 6px;
+    bottom: 5px;
+    right: 40px;
+}
+}
+
+@media (max-width: 991px) {
+.technologiesSvgSection svg {
+    max-width: 75%;
+}
+.bunnerContentLeft ul li a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    text-align: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.whatWeDoRightSectionTop h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 130%;
+}
+.whatWeDoRightSectionTop p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+}
+
 }
 @media (max-width: 768px) {
 .bunnerContent {
