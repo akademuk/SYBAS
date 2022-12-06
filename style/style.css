@@ -3193,6 +3193,41 @@ header .wrapper .logo span {
     padding-right: 16px;
     margin-right: 16px;
 }
+.bunner {
+    background: url(../img/mobile/bunner.png), url(../img/mobile/bunnerNoise.png);
+    background-size: cover;
+}
+.whatWeDo {
+    background: url(../img/mobile/WeNoise.png), #fff;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.whatWeDoLeft {
+    background: url(../img/mobile/weArts.png);
+    background-size: contain;
+}
+.solutions {
+    background: url(../img/mobile/NoiseFX.png),url(../img/mobile/Background.png);
+    background-size: cover; 
+}
+.technologies {
+    background: url(../img/mobile/TechnologiesArts.png), url(../img/mobile/Technologies.png), #fff;
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+}
+.aboutUs {
+    background: url(../img/mobile/AboutNoise.png), url(../img/mobile/About.png);
+    background-size: contain, cover;
+    background-repeat: repeat, no-repeat;
+}
+.benefits {
+    background: url(../img/mobile/BenefitsNoise.png), #fff;
+    background-size: contain;
+    background-repeat: repeat; 
+}
+.solutionsLeft {
+    margin-right: 0;
+}
 }
 @media (max-width: 576px) {
 .menu {
@@ -3252,7 +3287,6 @@ header .wrapper .logo span {
 .solutionsLeft {
     flex-direction: column-reverse;
     width: auto;
-    overflow: hidden;
 }
 .solutionsRight {
     width: auto;
