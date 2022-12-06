@@ -3228,6 +3228,36 @@ header .wrapper .logo span {
 .solutionsLeft {
     margin-right: 0;
 }
+.project {
+    background: url(../img/mobile/letNoise.png), url(../img/mobile/lets.png);
+    background-size: contain, cover;
+    background-repeat: repeat, no-repeat;
+}
+.weWork {
+    background: url(../img/weWorkBackgroundPlan.png), url(../img/mobile/WeNoise.png) #fff;
+    background-size: contain;
+    background-repeat: no-repeat, repeat;
+}
+.cases:before {
+    background: url(../img/mobile/cases.png);
+    background-size: contain;
+    background-repeat: repeat;
+}
+.news {
+    background: url(../img/mobile/newsNoise.png), #fff;
+    background-size: contain;
+    background-repeat: repeat;  
+}
+.reviews {
+    background: url(../img/mobile/raveusNoise.png), #fff;
+    background-size: contain;
+    background-repeat: repeat;  
+}
+footer {
+    background: url(../img/mobile/footerNoise.png), url(../img/mobile/footer.png);
+    background-size: contain, cover;
+    background-repeat: repeat, no-repeat;   
+}
 }
 @media (max-width: 576px) {
 .menu {
