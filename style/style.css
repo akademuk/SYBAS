@@ -3301,11 +3301,21 @@ header .wrapper .logo span {
     font-size: 40px;
     line-height: 45px;
 }
+.technologiesLeft {
+    width: auto;
+}
+.technologiesOpacity {
+    width: 100%;
+}
+.casesTabsSectionMainContent a {
+    font-size: 10px;
+}
 }
 @media (max-width: 320px) {
 .bunnerContentLeft ul li a {
     font-size: 12px;
 }
+
 .bunnerContentRight h1 {
     font-size: 25px;
     line-height: 40px;
