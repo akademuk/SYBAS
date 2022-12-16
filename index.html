@@ -1467,24 +1467,14 @@
         <p> ©  2022 SYBAS. Legal company</p>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
-    <script src="script/slick.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+    <script src="script/slick.min.js"></script> -->
     <script src="script/burger.js"></script>
     <script src="script/tabs.js"></script>
     <script src="script/cardText.js"></script>
     <script src="script/newsSlider.js"></script>
     <script src="script/flipCard.js"></script>
     <script src="script/reviewsSlider.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('.ReviewsnewsContentItem').click(function(){
-            $('.newsContentItemBackMain').removeClass('active');
-            $(this).closest(".ReviewsnewsContentItem").find('.newsContentItemBackMain').addClass('active');
-            $('.newsContentItemBackFooter').removeClass('active');
-            $(this).closest(".ReviewsnewsContentItem").find('.newsContentItemBackFooter').addClass('active');
-        });
-        });
-    </script>
-
+    <script src="script/reviewsOpen.js"></script>
 </body>
 </html>
