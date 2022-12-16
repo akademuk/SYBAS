@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.newsContent').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: $('.newsPrev'),
