@@ -995,6 +995,7 @@ ul li a:hover:before{
     align-items: center;
     width: max-content;
     margin-left: auto;
+    border: 2px solid transparent;
     transition: all 0.3s;
 }
 .technologiesLeftContainer a svg {
@@ -1333,7 +1334,7 @@ ul li a:hover:before{
 }
 .formLabelEmail:after {
     content: "";
-    background: url(../img/email.svg);
+    background: url(../img/Mail.svg );
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1502,8 +1503,8 @@ ul li a:hover:before{
 }
 .cases {
     background: url(../img/casesBackground.png), #000;
-    background-size: cover;
-    background-repeat: repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 128px 0;
     width: 100%;
     border-bottom: 2px dashed #000000;  
@@ -2358,7 +2359,9 @@ footer {
     line-height: 140%;
     color: #393939;
 }
-
+.solutionsRightNoneSectionLink {
+    margin: 0 10px;
+}
 
 
 
@@ -2446,6 +2449,9 @@ header {
 }
 .benefitsWrapper {
     position: relative;
+}
+.solutionsRightContainerAfter h3 span br {
+    display: none;
 }
 .benefits {
     padding-bottom: 400px;
